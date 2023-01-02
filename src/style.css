@@ -1,0 +1,90 @@
+:root {
+    --purple: #8351A3;
+    --green: #86D4D5;
+    --white: #fff;
+}
+
+/* general style */
+
+body {
+    background-color: var(--white);
+    font-family: Verdana, Geneva, sans-serif;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--green);
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    color: var(--white);
+}
+
+a {
+    color: var(--green);
+}
+
+img {
+    width: 100%;
+}
+
+/* sitewise */
+
+.tabs-container {
+    width: 740px;
+    margin: auto;
+    padding: 0;
+}
+
+.tab {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 16px;
+    background-color: var(--white);
+    color: var(--purple);
+    margin-right: 8px;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab.active,
+.tab:hover {
+    background-color: var(--purple);
+    color: var(--green);
+}
+
+#content {
+    background-color: var(--purple);
+    text-align: center;
+    width: 700px;
+    height: 90vh;
+    margin: auto;
+    padding: 20px;
+}
+
+/* menu */
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    font-weight: bold;
+    margin: 16px;
+}

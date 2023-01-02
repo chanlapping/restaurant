@@ -1,4 +1,4 @@
-import Img from './pexels-chan-walrus-941861.jpg';
+import Img from './burger.jpg';
 
 export default function loadPage() {
     const content = document.querySelector('#content');
@@ -7,12 +7,18 @@ export default function loadPage() {
     topImg.src = Img;
 
     const headline = document.createElement('h1');
-    headline.textContent = 'Wine Sense';
+    headline.textContent = 'BURGERLAND';
 
-    const about = document.createElement('p');
-    about.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam, placeat animi fuga asperiores dicta natus architecto, officiis quas repellat culpa commodi! Ipsa sint delectus non cum laudantium voluptatem recusandae?';
+    const businessHours = document.createElement('p');
+    businessHours.textContent = `Open Monday - Sunday 12:00 -23:00`;
+
+    const tel = document.createElement('p');
+    tel.textContent = 'Delivery Order: 123-456-789';
 
     content.appendChild(topImg);
     content.appendChild(headline);
-    content.appendChild(about);
+    content.appendChild(businessHours);
+    content.appendChild(tel);
 }
+
+// <a href="https://www.freepik.com/free-photo/front-view-yummy-meat-cheeseburger-with-french-fries-dark-background-dinner-burgers-snack-fast-food-sandwich-salad-dish-toast_22292762.htm#query=hamburger&position=14&from_view=search&track=sph">Image by KamranAydinov</a> on Freepik
