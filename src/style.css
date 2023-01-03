@@ -70,13 +70,17 @@ img {
     color: var(--green);
 }
 
-#content {
+#content,
+footer {
     background-color: var(--purple);
     text-align: center;
     width: 700px;
-    height: 90vh;
     margin: auto;
     padding: 20px;
+}
+
+#content {
+    height: 90vh;
 }
 
 /* menu */

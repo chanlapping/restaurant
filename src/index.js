@@ -3,9 +3,7 @@ import loadMenu from "./menu";
 import loadContact from "./contact";
 import './style.css';
 
-// create 3 buttons
-// append them to the page
-// add event listener -> call the relevant load function
+
 
 const homeTab = document.createElement('button');
 homeTab.textContent = 'Home';
@@ -52,6 +50,16 @@ document.body.appendChild(tabContainer);
 const content = document.createElement('div');
 content.id = 'content';
 document.body.appendChild(content);
+
+const footer = document.createElement('footer');
+footer.innerHTML = `<p>
+<a href="https://www.freepik.com/free-photo/front-view-yummy-meat-cheeseburger-with-french-fries-dark-background-dinner-burgers-snack-fast-food-sandwich-salad-dish-toast_22292762.htm#query=hamburger&position=14&from_view=search&track=sph">Image by KamranAydinov</a> on Freepik
+</p>
+<p>
+<a href="https://wepik.com/edit/duotone-burger-food-menu-6403013">Menu template</a> created by Wepik
+</p>`;
+
+document.body.appendChild(footer);
 
 homeTab.classList.add('active');
 loadPage();
